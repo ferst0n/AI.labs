@@ -62,10 +62,10 @@ def secondTask():
         My data 2.4
     """
     myData = np.array([
-        [8.4, 5.9, -10.3],
-        [3.2, -5.4, -9.9],
-        [-7.8, 13.5, -214],
-        [26, 26.9, -300.5]
+        [8.4, 5.9, -10.3, 13.5],
+        [3.2, -5.4, -9.9, 4.2],
+        [-7.8, 13.5, -214, 3.7],
+        [26, 26.9, -300.5, 2.5]
     ])
     for i in range(3, 6):
         dataBinarized = preprocessing.Binarizer(threshold=i).transform(myData)
