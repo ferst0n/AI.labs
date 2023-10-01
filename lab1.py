@@ -83,13 +83,17 @@ def secondTask():
     """
         average value and standard deviation for my data 2.7
     """
-    print("Before:")
-    print("Average value: \n", myData.mean(axis=0))
-    print("Standard deviation: \n", myData.std(axis=0))
-    print("After:")
-    dataScaled = preprocessing.scale(myData)
-    print("Average value: \n", dataScaled.mean(axis=0))
-    print("Standard deviation: \n", dataScaled.std(axis=0))
+    for i in range(3, 6):
+        dataBinarized = preprocessing.Binarizer(threshold=i).transform(myData)
+        print("threshold =", i)
+        print("Before:")
+        print("Average value: \n", dataBinarized.mean(axis=0))
+        print("Standard deviation: \n", dataBinarized.std(axis=0))
+        print("After:")
+        dataScaled = preprocessing.scale(dataBinarized)
+        print("Average value: \n", dataScaled.mean(axis=0))
+        print("Standard deviation: \n", dataScaled.std(axis=0))
+
     """
         MinMax 2.8
     """
