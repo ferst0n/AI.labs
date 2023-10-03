@@ -74,12 +74,12 @@ def secondTask():
         average value and standard deviation for example data 2.5
     """
     print("Before:")
-    print("Average value: \n", inputData.mean(axis=0))
-    print("Standard deviation: \n", inputData.std(axis=0))
+    print("Average value: \n", inputData.mean())
+    print("Standard deviation: \n", inputData.std())
     print("After:")
     dataScaled = preprocessing.scale(inputData)
-    print("Average value: \n", dataScaled.mean(axis=0))
-    print("Standard deviation: \n", dataScaled.std(axis=0))
+    print("Average value: \n", dataScaled.mean())
+    print("Standard deviation: \n", dataScaled.std())
     """
         average value and standard deviation for my data 2.7
     """
@@ -87,13 +87,12 @@ def secondTask():
         dataBinarized = preprocessing.Binarizer(threshold=i).transform(myData)
         print("threshold =", i)
         print("Before:")
-        print("Average value: \n", dataBinarized.mean(axis=0))
-        print("Standard deviation: \n", dataBinarized.std(axis=0))
+        print("Average value: \n", dataBinarized.mean())
+        print("Standard deviation: \n", dataBinarized.std())
         print("After:")
         dataScaled = preprocessing.scale(dataBinarized)
-        print("Average value: \n", dataScaled.mean(axis=0))
-        print("Standard deviation: \n", dataScaled.std(axis=0))
-
+        print("Average value: \n", dataScaled.mean())
+        print("Standard deviation: \n", dataScaled.std())
     """
         MinMax 2.8
     """
@@ -114,8 +113,8 @@ def secondTask():
     """
         normalized my data 2.12
     """
-    dataNormalizedL1 = preprocessing.normalize(inputData, norm="l1")
-    dataNormalizedL2 = preprocessing.normalize(inputData, norm="l2")
+    dataNormalizedL1 = preprocessing.normalize(myData, norm="l1")
+    dataNormalizedL2 = preprocessing.normalize(myData, norm="l2")
     print("L1 normalize: \n", dataNormalizedL1)
     print("L2 normalize: \n", dataNormalizedL2)
 
