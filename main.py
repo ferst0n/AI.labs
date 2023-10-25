@@ -2,6 +2,7 @@ from lab1 import *
 from lab2 import *
 from lab3 import *
 from lab4 import *
+from lab5 import *
 
 myNumber = 9
 if __name__ == '__main__':
@@ -25,4 +26,12 @@ if __name__ == '__main__':
     """
     #regress()
     #multidimensionalRegress()
-    costEstimate()
+    #costEstimate()
+
+    """
+        lab 5
+    """
+
+    #decisionTree()
+    randomForest()
+
