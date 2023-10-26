@@ -3,24 +3,29 @@ from lab2 import *
 from lab3 import *
 from lab4 import *
 from lab5 import *
+from lab6 import *
 
 myNumber = 9
 if __name__ == '__main__':
+
     """
         lab 1
     """
     # firstTask()
     # secondTask()
+
     """
         lab 2
     """
     #labelEncoding()
     #bayeClassifier()
+
     """
         lab 3
     """
     #supportVectorMachine()
     #supportVectorMachineWithData()
+
     """
         lab 4
     """
@@ -33,5 +38,12 @@ if __name__ == '__main__':
     """
 
     #decisionTree()
-    randomForest()
+    #randomForest()
 
+    """
+        lab 6
+    """
+    #validityMeasures()
+    #handleClassDisbalance()
+    #findOptimalTrainingParams()
+    calculatingRelativeImportanceFeatures()

@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.tree import DecisionTreeClassifier
-from utilities import visualize_classifier
-import argparse
+from utilities import *
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
 
 def decisionTree():
@@ -44,10 +43,7 @@ def decisionTree():
     print("#" * 40 + "\n")
     plt.show()
 # Парсер аргументов
-def build_arg_parser():
-    parser = argparse.ArgumentParser(description='Classify data using \Ensemble Learning techniques')
-    parser.add_argument('--classifier-type', dest='classifier_type', required=True, choices=['rf', 'erf'], help="Type of classifier \ to use; can be either 'rf' or 'erf'")
-    return parser
+
 def randomForest():
     args = build_arg_parser().parse_args()
     classifier_type = args.classifier_type

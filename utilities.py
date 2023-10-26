@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import argparse
 
 def visualize_classifier(classifier, X, y):
     # Define the minimum and maximum values for X and Y
@@ -79,6 +80,9 @@ def visualize_classifier(classifier, X, y, title=''):
     plt.show()
 
 
-
+def build_arg_parser():
+    parser = argparse.ArgumentParser(description='Classify data using \Ensemble Learning techniques')
+    parser.add_argument('--classifier-type', dest='classifier_type', required=True, choices=['rf', 'erf'], help="Type of classifier \ to use; can be either 'rf' or 'erf'")
+    return parser
 
 
