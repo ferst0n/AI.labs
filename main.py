@@ -4,6 +4,8 @@ from lab3 import *
 from lab4 import *
 from lab5 import *
 from lab6 import *
+from lab7 import *
+from lab8 import *
 
 myNumber = 9
 if __name__ == '__main__':
@@ -46,4 +48,19 @@ if __name__ == '__main__':
     #validityMeasures()
     #handleClassDisbalance()
     #findOptimalTrainingParams()
-    calculatingRelativeImportanceFeatures()
+    #calculatingRelativeImportanceFeatures()
+
+    """
+        lab 7
+    """
+    #clusteringDataK()
+    #middleShift()
+
+    """
+        lab 8
+    """
+    #clusteringQualityAssessment()
+    #simpleSimilarityPropagationModel()
+    segmentation()
+
+
